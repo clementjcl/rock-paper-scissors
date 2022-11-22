@@ -4,42 +4,34 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rock Paper Scissors</title>
+        <title>Alex the Hungry Monkey</title>
         <script src="script.js" defer></script>
         <link rel="stylesheet" href="./styles.css">
     </head>
+
     <body>
-        <header class="header">
-            <h1 class="title">ROCK PAPER SCISSORS</h1>
-        </header>
-
-        <main>
-            <div class= "scoreboard">
-                <h2 class="score-info">Choose your weapon</h2>
-                <h3 class="score-message">First to score 5 points wins the game</h3>
-                <div class="score-result">
-                    <div class="score-player">
-                        <div class="symbol" id="symbolPlayer">?</div>
-                        <p class="score" id="scorePlayer">Player: 0</p>
-                    </div>
-                    <div class="score-computer">
-                        <div class="symbol" id="symbolComputer">?</div>
-                        <p class="score" id="scoreComputer">Computer: 0</p>
-                    </div>
+        <section class="game-block">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <h1 class="title">ALEX THE MONKEY</h1>
+                    <p>Help Alex the Hungry Monkey to climb up the tree and find his favourite fruit. But be careful! The eagle is trying to catch him!</p>
+                    <button class="btn-start">Let the Adventure Begin</button>
                 </div>
-            </div>
-
-            <div class="selection">
-                <button class="btnSelection" id="rock">Rock</button>
-                <button class="btnSelection" id="paper">Paper</button>
-                <button class="btnSelection" id="scissors">Scissors</button>
-            </div>
-
-        </main>
-
-        <footer class="footer"></footer>
+                <input class="btn-help" type="image" src="./images/help.png">
+            </div>     
+        </section>  
         
-
+        <section class="footer">
+            <div class= "scoreboard">
+                <div class="score-player">
+                    <p class="score" id="scorePlayer">Alex: 0</p>
+                </div>
+                <h3 class="score-message">Climb 5 levels before Alex run out of energy</h3>
+                <div class="score-computer">
+                    <p class="score" id="scoreComputer">Energy: 5</p>
+                </div> 
+            </div>
+        </section>
     </body>
 
 </html>

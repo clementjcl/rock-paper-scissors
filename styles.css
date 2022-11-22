@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body, html {
+    /* Margins */
+    margin: 0;
+    padding: 0;
+
+    /* Text styles */
+    font-family: Roboto, sans-serif;
+    color: #F2F2F2;
+  }
+
+html {
+    overflow: auto;
+}
+
+body {
+    /* Flexbox */
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+
+    /* Background */
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(images/background.jpeg);
+    background-size: 100%;
+    
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+
+/* *********************GAME BOX********************* */
+.game-block {
+    /* Sizing */
+    height: auto;
+
+    /* Flexbox */
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 auto;
+
+    /* border: 3px solid red; */
+}
+
+
+/* *********************INTRO********************* */
+.intro-container {
+    /* Flexbox */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    /* Padding */
+    padding-top: 100px;
+
+    /* Text style */
+    text-align: center;
+
+    /* border: 10px solid greenyellow; */
+}
+
+.intro-text {
+    /* Flexbox */
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column;
+    max-width: 400px;
+    align-items: center;
+}
+
+.intro-text h1 {
+    /* Text style */
+    font-size: 5em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.intro-text p {
+    font-size: 1;
+}
+
+.btn-start {
+    /* Positioning and sizing */
+    display: block;
+    width: 150px;
+
+    /* Padding and margins */
+    padding: 0.5em;
+    margin-top: 50px;
+
+    /* Text style */
+    font-size: 1em;
+    text-decoration: none;
+    color: #F2F2F2;
+
+    /* Border styles */
+    border: 3px solid #F2F2F2;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.btn-help {
+    /* Size */
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: 50px;
+    /* border: 3px solid yellowgreen; */
+}
+
+
+/* *********************PLAY********************* */
+.play-container {
+    /* Flexbox */
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+
+    /* border: 3px solid red; */
+}
+
+.play-display {
+    /* display: flex; */
+    /* flex-direction: column; */
+    
+    /* Size */
+    min-width: 45vw;
+
+    /* Margins */
+    margin: 0px;
+
+    /* border: 3px solid greenyellow; */
+}
+
+.alex {
+    /* Size */
+    max-width: 200px;
+    max-height: 200px;
+    
+    /* Margins */
+    margin-left: 65%;
+    
+    /* border: 3px solid greenyellow; */
+}
+
+.eagle {
+    /* Size */
+    
+    max-height: 200px;
+
+    /* Margins */
+    
+    margin-left: 70%;
+    margin-top: 20px;
+}
+
+.play-selection {
+    /* Flexbox */
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 45%;
+    margin: 30px;
+    margin-bottom: 100px;
+
+    /* Background styles . Its applied a first background with gradient (two colors--same color)*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
+
+    border-radius: 10px;
+
+    /* border: 3px solid violet; */
+}
+
+.btn-selection {
+    /* Sizing */
+    max-width: 100px;
+    max-height: 100px;
+
+    /* Margin */
+    margin-top: 40px;
+    margin-bottom: 15px;
+    /* border: 3px solid red; */
+}
+
+.sel-info {
+    font-size: 2em;
+}
+
+
+/* *********************GAME OVER********************* */
+.over-container {
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+
+    /* Padding and margins */
+    padding: 40px;
+    margin: 60px;
+
+    border-radius: 20px;
+
+    /* Background styles . Its applied a first background with gradient (two colors--same color)*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
+
+    /* border: 3px solid red; */
+}
+
+.over-container h1 {
+    font-size: 5em;
+    margin: 0px;
+}
+
+.over-container h2 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.over-buttons {
+    display: flex;
+}
+
+.btn-over {
+    /* Positioning and sizing */
+    display: block;
+    width: 150px;
+ 
+    /* Flexbox */
+    align-self: center;
+ 
+    /* Padding and margins */
+    padding: 0.5em;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+
+    /* Text style */
+    font-size: 1em;
+    text-decoration: none;
+    color: #F2F2F2;
+
+    /* Border styles */
+    border: 3px solid #F2F2F2;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
+/* *********************HELP********************* */
+.help-container {
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+
+    /* Padding and margins */
+    padding: 40px;
+    margin: 40px;
+    margin-top: 60px;
+
+    border-radius: 20px;
+
+    /* Background styles . Its applied a first background with gradient (two colors--same color)*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
+}
+
+.btn-back {
+    /* Positioning and sizing */
+    display: block;
+    width: 150px;
+
+    /* Flexbox */
+    align-self: center;
+
+    /* Padding and margins */
+    padding: 0.5em;
+    margin-top: 50px;
+
+    /* Text style */
+    font-size: 1em;
+    text-decoration: none;
+    color: #F2F2F2;
+
+    /* Border styles */
+    border: 3px solid #F2F2F2;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
+/* *********************FOOTER-SCOREBOARD********************* */
+.footer {
+    /* Position and size */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    /* Background styles . Its applied a first background with gradient (two colors--same color)*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
+
+    /* Text styles */
+    text-align: center;
+    font-size: 1em;
+
+    /* border: 3px solid greenyellow; */
+}
+
+.scoreboard {
+    /* Flexbox */
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score-player, .score-computer {
+    /* Flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* Size */
+    min-width: 100px;
+
+    /* Text properties */
+    font-size: 1.5em;
+
+    /* border: 3px solid yellowgreen; */
+}
+
+.scoreboard h3 {
+    /* Text properties */
+    font-size: 1.3em;
+    min-width: 450px;
+
+    /* border: 3px solid yellowgreen; */
+}
+
+
+/* *********************OTHERS********************* */
+ul {
+    /* Flexbox */
+    display: flex;
+
+    /* Text styles */
+    list-style-type: none;
+
+    /* Padding and margins */
+    padding-right: 16px;
+    gap: 16px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+
