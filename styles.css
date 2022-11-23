@@ -20,7 +20,7 @@ body {
     height: 100vh;
 
     /* Background */
-    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(images/background.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url(images/background.jpeg);
     background-size: 100%;
     
     background-repeat: no-repeat;
@@ -312,7 +312,7 @@ body {
     /* Flexbox */
     display: flex;
     flex: 1 1 auto;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -324,6 +324,10 @@ body {
     
     /* Size */
     min-width: 100px;
+
+    /* Margins */
+    margin-left: 50px;
+    margin-right: 50px;
 
     /* Text properties */
     font-size: 1.5em;
