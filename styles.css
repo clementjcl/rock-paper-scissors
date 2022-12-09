@@ -54,7 +54,7 @@ body {
 
     /* Text style */
     text-align: center;
-
+    
     /* border: 10px solid greenyellow; */
 }
 
@@ -65,11 +65,19 @@ body {
     flex-flow: column;
     max-width: 400px;
     align-items: center;
+
+    /* Margins */
+    padding: 50px;
+
+    /* Background styles . Its applied a first background with gradient (two colors--same color)*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6));
+    border-radius: 10px;
 }
 
 .intro-text h1 {
     /* Text style */
     font-size: 5em;
+
 
     /* Margins */
     margin-top: 0;
